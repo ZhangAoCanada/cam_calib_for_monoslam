@@ -164,13 +164,13 @@ if __name__ == "__main__":
     # how many corners there are in the chessboard
     chess_board_size = (8, 6)
     # size of each grid, please make the unit to "meters"
-    grid_size = 0.030
+    grid_size = 0.025
     # create indexes
     all_index = ReadTxtFile("./selected.txt")
     # image directory
     left_calibration_directory = "./calib_images/"
     # calibration matrix file location
-    calib_txt = "../mono_cv_cpp/intrinsic.txt"
+    calib_txt = "./result/intrinsic.txt"
     # main
     main(chess_board_size, grid_size, all_index, calib_txt)
 
